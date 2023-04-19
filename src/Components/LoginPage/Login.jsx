@@ -11,12 +11,10 @@ export default function Login() {
       function showPassword(){
         if (password.type === "password"){
           password.setAttribute('type', 'text');
-          icon.classList.add('hide')
-         }
+          }
         else{
           password.setAttribute('type', 'password')
-          icon.classList.remove('hide')
-        }
+         }
       }
 
 
