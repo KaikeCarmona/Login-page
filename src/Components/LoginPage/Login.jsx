@@ -11,6 +11,7 @@ export default function Login() {
       function showPassword(){
         if (password.type === "password"){
           password.setAttribute('type', 'text');
+          console.log(password)
           }
         else{
           password.setAttribute('type', 'password')
