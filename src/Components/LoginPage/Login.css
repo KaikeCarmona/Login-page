@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito&family=Roboto&display=swap");
+
+.container-login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/arvores.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  width: 20rem;
+  height: 25rem;
+  background-color: rgba(41, 41, 41, 0.9);
+
+  border-radius: 50px 0px 50px 0px;
+}
+
+.login-box p {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 13%;
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+}
+
+.user-circle {
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  bottom: 15%;
+}
+
+.login-box .input-info {
+  width: 90%;
+  margin: auto;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 2rem;
+}
+
+#input1 {
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.input-box span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 0.2em;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+  color: #00e3e3;
+  transform: translateX(10px) translateY(-6.5px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #292929;
+  border-left: 1px solid #00e3e3;
+  border-right: 1px solid #00e3e3;
+}
+
+.input-box:nth-child(2) input:valid ~ span,
+.input-box:nth-child(2) input:focus ~ span {
+  background-color: #00e3e3;
+  color: #1a2b3a;
+  border-radius: 2px;
+}
+
+.input-box input:valid,
+.input-box input:focus {
+  border: 1px solid #00e3e3;
+}
+
+.olho {
+  cursor: pointer !important; 
+  position: absolute;
+  left: 0;
+  padding: 12px;
+  font: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
+  left: 85%;
+}
+ 
+.olho:hover {
+  color: #fff;
+}
+ 
+
+.wrapper {
+  /* padding: 1.5rem 0; */
+  filter: url("#goo");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: #00e3e3;
+  color: #1a1e24;
+  font-weight: bold;
+  padding: 1.18em 1.32em 1.03em;
+  line-height: 1;
+  border-radius: 3rem;
+  position: relative;
+  width: 80%;
+  height: 1rem;
+  text-decoration: none;
+  font-family: var(--font);
+}
+
+.button:before,
+.button:after {
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-color: #00e3e3;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button:before {
+  top: -25%;
+  left: 20%;
+}
+
+.button:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+  transform: none;
+}
+
+.teste {
+  width: 100%;
+
+  margin: auto;
+}
+
+.teste a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.teste a:hover {
+  color: #205685;
+  transition: 0.3s ease;
+}
+
+.teste p {
+  display: flex;
+  align-items: center;
+  top: 10px;
+  justify-content: center;
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+}
